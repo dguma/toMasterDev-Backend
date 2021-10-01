@@ -46,11 +46,7 @@ INSTALLED_APPS = [
     'ckeditor'
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'http://127.0.0.1:3000',
-    'https://to-master-dev.herokuapp.com/'
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_METHODS = [
 'DELETE',
@@ -68,10 +64,6 @@ CORS_ALLOW_METHODS = [
 'PATCH',
 'POST',
 'PUT',
-]
-
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000', 'http://127.0.0.1:3000', 'localhost:3000', '127.0.0.1:3000'
 ]
 
 MIDDLEWARE = [

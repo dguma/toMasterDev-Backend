@@ -30,3 +30,12 @@ class User(models.Model):
 
     def __str__(self):
         return self.firstName
+
+class Comment(models.Model):
+    name = models.CharField(max_length=155)
+    content = RichTextField()
+    date = models.DateField()
+
+
+    def __str__(self):
+        return self.name

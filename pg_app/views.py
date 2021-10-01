@@ -1,8 +1,8 @@
 # from django.shortcuts import render
 # from django.http import HttpResponse
 from rest_framework import viewsets
-from .serializers import PostsSerializer, SubjectsSerializer, UserSerializer
-from .models import Posts, Subjects, User
+from .serializers import PostsSerializer, SubjectsSerializer, UserSerializer, CommentSerializer
+from .models import Posts, Subjects, User, Comment
 from django.shortcuts import render
 # Create your views here.
 
@@ -20,3 +20,7 @@ class SubjectList(viewsets.ModelViewSet):
 class UserList(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+class CommentList(viewsets.ModelViewSet):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer
