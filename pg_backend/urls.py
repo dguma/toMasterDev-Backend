@@ -22,6 +22,7 @@ router = routers.DefaultRouter()
 router.register(r'users', views.UserList, 'user')
 router.register(r'subjects', views.SubjectList, 'subject')
 router.register(r'posts', views.PostList, 'post')
+router.register(r'comments', views.PostList, 'comment')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
