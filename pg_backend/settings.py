@@ -49,7 +49,7 @@ INSTALLED_APPS = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
-    'http://treetoke.com'
+    'https://to-master-dev.herokuapp.com/'
 ]
 
 CORS_ORIGIN_WHITELIST = [
