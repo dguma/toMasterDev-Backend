@@ -52,6 +52,24 @@ CORS_ALLOWED_ORIGINS = [
     'https://to-master-dev.herokuapp.com/'
 ]
 
+CORS_ALLOW_METHODS = [
+'DELETE',
+'GET',
+'OPTIONS',
+'PATCH',
+'POST',
+'PUT',
+]
+
+CORS_ALLOW_METHODS = [
+'DELETE',
+'GET',
+'OPTIONS',
+'PATCH',
+'POST',
+'PUT',
+]
+
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000', 'http://127.0.0.1:3000', 'localhost:3000', '127.0.0.1:3000'
 ]
