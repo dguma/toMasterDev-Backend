@@ -1,0 +1,3 @@
+CREATE DATABASE pg_app;
+CREATE USER pguser WITH PASSWORD 'pgadmin';
+GRANT ALL PRIVILEGES ON DATABASE pg_app to pguser;
